@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dojo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Container">
+        <div class="nav">
+            <h1>DojoWeather</h1>
+            <div class="link">
+                <a onclick="alert('loading weather report...')" href="#">Burbank</a>
+                <a onclick="alert('loading weather report...')" href="#">Chicago</a>
+                <a onclick="alert('loading weather report...')" href="#">Dallas</a>
+            </div>
+        </div>
+        <div class="mid">
+            <h2>San Jose</h2>
+            <div>
+                <label for="#"> Show Temprature in </label>
+                <select name="°C" id="°C" onchange="convert(this)">
+                    <option value="°C">°C</option>
+                    <option value="°F">°F</option>
+                </select>
+            </div>
+            
+        </div>
+        
+        <hr>
+        <div class="weathercards">
+            <div class="cards">
+                <h3>Today</h3>
+                <img class="img" src="some_rain.png" alt="">
+                <p>Some Rain</p>
+                <div class="temp">
+                    <b id="temp1" class="color">24°</b>
+                    <b id="temp2" class="blu">18°</b>
+                </div>
+            </div>
+            <div class="cards">
+                <h3>Tomorrow</h3>
+                <img class="img" src="some_sun.png" alt="">
+                <p>Some Rain</p>
+                <div class="temp">
+                    <b id="temp3" class="color">27°</b>
+                    <b id="temp4" class="blu">19°</b>
+                </div>
+            </div>
+            <div class="cards">
+                <h3>Friday</h3>
+                <img class="img" src="some_clouds.png" alt="">
+                <p>Some Rain</p>
+                <div class="temp">
+                    <b id="temp5" class="color">21°</b>
+                    <b id="temp6" class="blu">16°</b>
+                </div>
+            </div>
+            <div class="cards">
+                <h3>Saturday</h3>
+                <img class="img" src="some_sun.png" alt="">
+                <p>Some Rain</p>
+                <div class="temp">
+                    <b id="temp7" class="color">26°</b>
+                    <b id="temp8" class="blu">21°</b>
+                </div>
+            </div>
+        </div>
+        <div id="franksbox">
+            <img src="cookie.png" alt="">
+            <div>
+                <h3>Stop! Cookie Time</h3>
+                <p>we use cookies(sadly not the edible ones) to personalize
+                content and ads, toprovide social media features and to analyse our traffic. <a href="#"> Read more...</a>
+                </p>
+            </div>
+            <button onclick="hide(franksbox)" class="btn">I Accept</button>
+        </div>
+    </div>
+    <script src="dojo.js"></script>
+</body>
+</html>
